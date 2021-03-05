@@ -1,0 +1,280 @@
+/*body*/
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--cream);
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/*colors*/
+:root {
+    --blue: #C2E1FD;
+    --red: #F8614E;
+    --pink: #FED4CE;
+    --dark: #202932;
+    --cream: #FAF4F2;
+}
+
+/*Qaligo font*/
+@font-face {
+    font-family: Qaligo;
+    src: local("Qaligo Regular - Demo");
+}
+
+/*text styles*/
+.h3 {
+    color: var(--red);
+    text-align: center;
+    width: 100%;
+    height: 88px;
+    font: 56px Qaligo;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    margin: 0;
+}
+.h2 {
+    color: var(--red);
+    font: 36px Qaligo;
+    margin: 0;
+}
+.h1 {
+    color: var(--dark);
+    font: semibold 24px;
+    font-family: Poppins;
+    margin: 0;
+}
+.body-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--dark);
+}
+
+/*misc*/
+.line {
+    background-color: var(--blue);
+    border-width: 0;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0;
+}
+.button {
+    background-color: var(--pink);
+    border-width: 0;
+    height: 40px;
+    border-radius: 20px;
+}
+
+/*content*/
+/*navigation*/
+.nav {
+    position: sticky;
+    text-align: center;
+}
+.nav-link {
+    text-align: center;
+    margin-right: 144px;
+    text-decoration: none
+}
+.nav-link-contact {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    text-decoration: none
+}
+.nav-link:hover {
+    color: var(--red);
+}
+.nav-link-contact:hover {
+    color: var(--red);
+}
+
+/*hero*/
+.hero-line-1 {
+    position: relative;
+    width: 405px;
+    left: 135px;
+    top: 6px;
+}
+
+/*about me*/
+.about-section {
+    position: absolute;
+    top: 100%;
+}
+.about-box {
+    position: absolute;
+    width: 91.667%;
+    height: 400px;
+    right: 0px;
+    top: 1052px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 0px 100px;
+}
+.about-h2 {
+    position: absolute;
+    left: 40px;
+    top: -29px;
+}
+.about-photo {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    left: 40px; 
+    top: 50%;
+    transform: translate(0%, -50%);
+    background: url(20201105_131712.jpg);
+    background-size: 320px 320px;
+    border-radius: 0px 0px 0px 80px;
+}
+.about-body {
+    position: absolute;
+    left: 424px;
+    top: 30%;
+    transform: translate(0%, -30%);
+}
+.about-body-text {
+    position: relative;
+    width: 553px;
+    height: 112px;
+    margin: 0;
+    white-space: pre-wrap;
+    text-align: left;
+}
+.about-line {
+    position: relative;
+    width: 60px;
+    top: 29px;
+    left: 0;
+}
+.about-h1 {
+    position: relative;
+    top: 51px;
+    text-align: left;
+    left: 0;
+}
+
+/*work*/
+.work-section {
+    position: absolute;
+    top: 200%;
+}
+.work-box-1 {
+    position: absolute;
+    width: 83.333%;
+    height: 400px;
+    left: 8.333%;
+    top: 1860px;
+    background: #FFFFFF;
+    border-radius: 100px 0px 0px 0px;   
+}
+.work-h2 {
+    position: relative;
+    text-align: right;
+    height: 32px;
+    line-height: 32px;
+    top: -51px;
+}
+.work-box-1-h1 {
+    position: relative;
+    top: 96px;
+    left: 100px;
+}
+.work-box-2 {
+    position: absolute;
+    width: 83.333%;
+    height: 400px;
+    left: 8.333%;
+    top: 2380px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 100px 0px;   
+}
+.work-box-2-h1 {
+    position: relative;
+    top: 96px;
+    margin-right: 100px;
+    text-align: right;
+    
+}
+
+/*contact*/
+.contact-box {
+    position: absolute;
+    width: 91.667%;
+    height: 400px;
+    left: 0px;
+    top: 3184px;
+    background: #FFFFFF;
+    border-radius: 0px 100px 0px 0px;
+}
+.contact-h2 {
+    position: absolute;
+    left: 64px;
+    top: -29px;
+}
+.contact-body {
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
+.contact-h1 {
+    position: relative;
+    text-align: center;
+}
+.contact-line {
+    position: relative;
+    width: 60px;
+    top: 24px;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-button {
+    position: relative;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    width: 258px;
+    top: 58px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-button:hover {
+    color: var(--red);
+
+} 
+.contact-nav {
+    position: absolute;
+    bottom: 16px;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-link {
+    margin-right: 64px;
+    text-decoration: none;
+    text-align: center;
+}
+.contact-link:hover {
+    color: var(--red);
+}
+.contact-link-github {
+    text-decoration: none;
+    text-align: center;
+}
+.contact-link-github:hover {
+    color: var(--red);
+}
+
