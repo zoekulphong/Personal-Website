@@ -24,19 +24,6 @@ body {
 }
 
 /*text styles*/
-.h3 {
-    color: var(--red);
-    text-align: center;
-    width: 100%;
-    height: 88px;
-    font: 56px Qaligo;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-    margin: 0;
-}
 .h2 {
     color: var(--red);
     font: 36px Qaligo;
@@ -70,6 +57,7 @@ body {
     border-width: 0;
     height: 40px;
     border-radius: 20px;
+    user-select: none;
 }
 
 /*content*/
@@ -77,16 +65,16 @@ body {
 .nav {
     position: sticky;
     text-align: center;
+    padding: 0;
 }
 .nav-link {
     text-align: center;
     margin-right: 144px;
-    text-decoration: none
+    text-decoration: none;
 }
 .nav-link-contact {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: var(--dark);
+    margin: 0;
     text-decoration: none
 }
 .nav-link:hover {
@@ -97,11 +85,70 @@ body {
 }
 
 /*hero*/
-.hero-line-1 {
+.hero-body {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+    width: 1167px;
+    height: 88px;
+}
+.hero-h3 {
+    color: var(--red);
+    text-align: center;
+    width: 100%;
+    height: 88px;
+    font: 56px Qaligo;
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
+}
+.hero-line-left {
+    position: absolute;
     width: 405px;
-    left: 135px;
-    top: 6px;
+    left: 0px;
+    top: 105px;
+}
+.hero-line-right {
+    position: absolute;
+    width: 352px;
+    right: 0px;
+    top: 105px;
+}
+.hero-button {
+    position: relative;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    width: 212px;
+    top: 15px;
+    left: 49.7%;
+    transform: translate(-49.7%, 0%);
+}
+.hero-button:hover {
+    color: var(--red);
+}
+.hero-button:focus {
+    outline: none;
+}
+.hero-description-left {
+    position: absolute;
+    text-align: left;
+    top: 120px;
+    margin: 0;
+}
+.hero-description-right {
+    position: absolute;
+    text-align: right;
+    top: 120px;
+    right: 0;
+    margin: 0;
 }
 
 /*about me*/
@@ -130,8 +177,7 @@ body {
     left: 40px; 
     top: 50%;
     transform: translate(0%, -50%);
-    background: url(20201105_131712.jpg);
-    background-size: 320px 320px;
+    background: url(20201105_131712.jpg);    background-size: 320px 320px;
     border-radius: 0px 0px 0px 80px;
 }
 .about-body {
@@ -160,11 +206,49 @@ body {
     text-align: left;
     left: 0;
 }
+.about-skills {
+    position: relative;
+    top: 64px;
+    left: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.about-skills-col {
+    text-align: left;
+    margin-right: 64px;
+    width: auto;
+    line-height: 28px;
+}
+.about-resume-button {
+    position: absolute;
+    bottom: 0;
+    left: 372px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    width: 125px;
+}
+.about-resume-button:hover {
+    color: var(--red);
+}
+.about-resume-button:focus {
+    outline: none;
+}
 
 /*work*/
 .work-section {
     position: absolute;
     top: 200%;
+}
+.work-h2 {
+    position: relative;
+    text-align: right;
+    height: 32px;
+    line-height: 32px;
+    top: -51px;
 }
 .work-box-1 {
     position: absolute;
@@ -175,17 +259,48 @@ body {
     background: #FFFFFF;
     border-radius: 100px 0px 0px 0px;   
 }
-.work-h2 {
-    position: relative;
-    text-align: right;
-    height: 32px;
-    line-height: 32px;
-    top: -51px;
-}
 .work-box-1-h1 {
-    position: relative;
-    top: 96px;
+    position: absolute;
+    top: 100px;
     left: 100px;
+}
+.work-box-1-body {
+    position: absolute;
+    text-align: left;
+    top: 171px;
+    left: 100px;
+    margin: 0;
+}
+.work-box-1-line {
+    position: absolute;
+    width: 60px;
+    left: 100px;
+    top: 253px;
+}
+.work-box-1-button {
+    position: absolute;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    width: 140px;
+    top: 291px;
+    left: 100px;
+}
+.work-box-1-button:hover {
+    color: var(--red);
+}
+.work-box-1-button:focus {
+    outline: none;
+}
+.work-box-1-mockup {
+    position: absolute;
+    width: 562.5px;
+    height: 400px;
+    right: 48px;
+    top: 48px;
+    border: 0;
 }
 .work-box-2 {
     position: absolute;
@@ -197,11 +312,40 @@ body {
     border-radius: 0px 0px 100px 0px;   
 }
 .work-box-2-h1 {
-    position: relative;
-    top: 96px;
-    margin-right: 100px;
+    position: absolute;
+    bottom: 283px;
+    right: 100px;
     text-align: right;
-    
+}
+.work-box-2-body {
+    position: absolute;
+    text-align: right;
+    bottom: 204px;
+    right: 100px;
+    margin: 0;
+}
+.work-box-2-line {
+    position: absolute;
+    width: 60px;
+    right: 100px;
+    bottom: 172px;
+}
+.work-box-2-button {
+    position: absolute;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    width: 140px;
+    bottom: 100px;
+    right: 100px;
+}
+.work-box-2-button:hover {
+    color: var(--red);
+}
+.work-box-2-button:focus {
+    outline: none;
 }
 
 /*contact*/
@@ -244,7 +388,6 @@ body {
     font-weight: normal;
     text-align: center;
     font-size: 16px;
-    line-height: 40px;
     width: 258px;
     top: 58px;
     left: 50%;
@@ -254,6 +397,9 @@ body {
     color: var(--red);
 
 } 
+.contact-button:focus {
+    outline: none;
+}
 .contact-nav {
     position: absolute;
     bottom: 16px;
