@@ -169,16 +169,17 @@ body {
 .about-h2 {
     position: absolute;
     left: 40px;
-    top: -29px;
+    top: -30px;
 }
-.about-photo {
+.about-image {
     position: relative;
     width: 320px;
     height: 320px;
     left: 40px; 
     top: 50%;
     transform: translate(0%, -50%);
-    background: url(20201105_131712.jpg);    background-size: 320px 320px;
+    background: url(20201105_131712.jpg);   
+    background-size: 320px 320px;
     border-radius: 0px 0px 0px 80px;
 }
 .about-body {
@@ -268,7 +269,7 @@ body {
 .work-box-1-body {
     position: absolute;
     text-align: left;
-    top: 171px;
+    top: 139px;
     left: 100px;
     margin: 0;
 }
@@ -276,7 +277,7 @@ body {
     position: absolute;
     width: 60px;
     left: 100px;
-    top: 253px;
+    top: 221px;
 }
 .work-box-1-button {
     position: absolute;
@@ -286,7 +287,7 @@ body {
     text-align: center;
     font-size: 16px;
     width: 140px;
-    top: 291px;
+    top: 259px;
     left: 100px;
 }
 .work-box-1-button:hover {
@@ -314,14 +315,14 @@ body {
 }
 .work-box-2-h3 {
     position: absolute;
-    bottom: 283px;
+    bottom: 268px;
     right: 100px;
     text-align: right;
 }
 .work-box-2-body {
     position: absolute;
     text-align: right;
-    bottom: 204px;
+    bottom: 205px;
     right: 100px;
     margin: 0;
 }
@@ -329,7 +330,7 @@ body {
     position: absolute;
     width: 60px;
     right: 100px;
-    bottom: 172px;
+    bottom: 173px;
 }
 .work-box-2-button {
     position: absolute;
@@ -339,7 +340,7 @@ body {
     text-align: center;
     font-size: 16px;
     width: 140px;
-    bottom: 100px;
+    bottom: 101px;
     right: 100px;
 }
 .work-box-2-button:hover {
@@ -370,7 +371,7 @@ body {
 .contact-h2 {
     position: absolute;
     left: 64px;
-    top: -29px;
+    top: -32px;
 }
 .contact-body {
     position: relative;
