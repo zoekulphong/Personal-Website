@@ -4,16 +4,16 @@ body {
     margin: 0;
     background: var(--cream);
     width: auto;
-    height: 4210px;
+    height: auto;
     overflow-x: hidden;
 }
 
 /*colors*/
 :root {
-    --blue: #C2E1FD;
-    --red: #F8614E;
+    --blue: #ABD7FF;
+    --red: #FF4E37;
     --pink: #FED4CE;
-    --dark: #202932;
+    --dark: #212A32;
     --cream: #FAF4F2;
 }
 
@@ -72,10 +72,11 @@ body {
     font: 16px Qaligo;
     margin: 0;
     line-height: 16px;
-    position: absolute;
+    position: fixed;
     left: 32px;
     top: 32px;
     text-decoration: none;
+    z-index: 1;
 }
 .header-image {
     position: absolute;
@@ -84,6 +85,7 @@ body {
     top: 0;
     left: 0;
     z-index: -10;
+    object-fit: cover;
 }
 .header-body {
     position: absolute;
@@ -282,4 +284,93 @@ body {
     position: relative;
     left: 100px;
     top: 100px;
+}
+.conclusion-body-text {
+    position: absolute;
+    left: 100px;
+    top: 148px;
+    width: 620px;
+}
+.conclusion-image {
+    position: absolute;
+    top: 80px;
+    right: 120px;
+    width: 240px;
+    height: 240px;
+}
+
+/*contact*/
+.contact-box {
+    position: absolute;
+    width: 91.667%;
+    height: 400px;
+    left: 0px;
+    top: 4494px;
+    background: #FFFFFF;
+    border-radius: 0px 100px 0px 0px;
+}
+.contact-h2 {
+    position: absolute;
+    left: 64px;
+    top: -32px;
+}
+.contact-body {
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
+.contact-h3 {
+    position: relative;
+    text-align: center;
+}
+.contact-line {
+    position: relative;
+    width: 60px;
+    top: 24px;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-button {
+    position: relative;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    width: 258px;
+    top: 58px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-button:hover {
+    color: var(--red);
+
+} 
+.contact-button:focus {
+    outline: none;
+}
+.contact-nav {
+    position: absolute;
+    bottom: 16px;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-link {
+    margin-right: 64px;
+    text-decoration: none;
+    text-align: center;
+}
+.contact-link:hover {
+    color: var(--red);
+}
+.contact-link-github {
+    text-decoration: none;
+    text-align: center;
+}
+.contact-link-github:hover {
+    color: var(--red);
 }

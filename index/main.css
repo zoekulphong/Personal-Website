@@ -1,3 +1,8 @@
+/*html*/
+.html {
+    scroll-behavior: smooth;
+}
+
 /*body*/
 body {
     padding: 0;
@@ -10,10 +15,10 @@ body {
 
 /*colors*/
 :root {
-    --blue: #C2E1FD;
-    --red: #F8614E;
+    --blue: #ABD7FF;
+    --red: #FF4E37;
     --pink: #FED4CE;
-    --dark: #202932;
+    --dark: #212A32;
     --cream: #FAF4F2;
 }
 
@@ -63,6 +68,17 @@ body {
 
 /*content*/
 /*navigation*/
+.home-button {
+    color: var(--red);
+    font: 16px Qaligo;
+    margin: 0;
+    line-height: 16px;
+    position: fixed;
+    left: 32px;
+    top: 32px;
+    text-decoration: none;
+    z-index: 1;
+}
 .nav {
     position: sticky;
     text-align: center;
@@ -86,6 +102,10 @@ body {
 }
 
 /*hero*/
+.home-section {
+    position: absolute;
+    top: 0;
+}
 .hero-body {
     position: absolute;
     left: 50%;
